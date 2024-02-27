@@ -247,12 +247,14 @@ main.contato{
     padding: 4rem;
     margin-top: 2rem;
     border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .contato-container form{
     display: flex;
     flex-direction: column;
     color: #202020;
+    
 }
 
 .contato-container form input, textarea{
