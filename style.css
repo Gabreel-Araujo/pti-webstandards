@@ -1,0 +1,328 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.nav-bar {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list ul a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.nav-list ul a:hover {
+    cursor: pointer;
+    background-color: #f0eaea;
+    transition: 0.4s;
+    border-radius: 8px;
+}
+
+.btn-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.7rem;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+
+    background-image: url('./assets/img/8714-Nevada-Oak.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 35rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-home {
+
+    background-color: #f8f8f8;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.info-home h1 {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.info-home p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 8px;
+    background: rgb(30, 252, 30);
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.875rem;
+}
+
+.btn:hover {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    background: rgb(29, 241, 29);
+
+}
+
+.about {
+    display: flex;
+    align-items: center;
+
+    margin-top: 1rem;
+
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+}
+
+.about-section p {
+    color: #202020;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 1rem;
+    text-align: center;
+}
+
+.img-about {
+    width: 50%;
+    height: 100%;
+}
+
+.img-about img {
+    height: 100%;
+    width: 90%;
+    border-radius: 4px;
+}
+
+.advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.benefits {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+
+}
+
+.advantage h1 {
+    padding: 1rem;
+    margin: 1rem 0;
+
+}
+
+.icon {
+    font-size: 4rem;
+    color: #3654ff
+}
+
+.card {
+    width: 33%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+.card p,
+.card h1 {
+    color: #474545;
+    margin-top: 1rem;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.product h1{
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.product-info{
+    width: 33%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: rgba(30, 252, 30,0.2);
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-bottom: 1rem;
+}
+.product-info img{
+    width: 100%;
+    padding: 0.975rem;
+    border-radius: 2rem;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.carrossel{
+    display: flex;
+    flex-direction: row;
+}
+
+.product .btn{
+   color: #fff; 
+   font-weight: lighter;
+}
+
+
+@media (max-width:720px) {
+    .nav-bar {
+        flex-direction: column;
+
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+        margin-left: 40px;
+    }
+
+    .nav-list ul {
+
+        flex-direction: column;
+    }
+
+    .nav-list {
+
+        display: none;
+        width: 100%;
+    }
+
+    .nav-list a {
+        display: block;
+        margin-bottom: 20px;
+
+    }
+
+    .open {
+        display: block;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-section {
+        width: 100%;
+    }
+
+    .img-about {
+        display: none;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    .product-info{
+        width: 100%;
+    }
+}
+
+@media (max-width: 997px) {
+    .benefits {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    .product-container{
+        flex-direction: column;
+        
+    }
+    .product-info{
+        width: 50%;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .info-home{
+        padding: 4rem 2rem;
+    }
+    .product-info{
+        width: 100%;
+    }
+}

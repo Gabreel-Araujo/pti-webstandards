@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>PTI WEB </title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+
+            <div class="logo">
+                <h1>logo</h1>
+            </div>
+            <button class="btn-menu" onclick="showMenu()">&#9776</button>
+            <div class="nav-list ">
+                <ul>
+                    <li><a class="nav-item" href="#">Inicio</a></li>
+                    <li><a class="nav-item" href="#">Vantagens</a></li>
+                    <li><a class="nav-item" href="#">Sobre Nós</a></li>
+                    <li><a class="nav-item" href="#">Contato</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="info-home">
+
+            <h1>Descubra Seu Piso Ideal.</h1>
+            <p>Conheça nossos produtos</p>
+            <button class="btn">Acessar</button>
+        </div>
+    </section>
+
+    <main>
+        <div class="about">
+            <div class="about-section">
+                <h1>Sobre Nós</h1>
+
+                <p>
+                    Na Laminados Express, nossa paixão é criar espaços que inspirem e encantem.
+                    Fundada por um grupo de entusiastas de design de interiores, nossa
+                    empresa rapidamente se tornou líder no mercado de pisos laminados de alta
+                    qualidade.
+                </p>
+            </div>
+            <div class="img-about">
+                <img src="assets/img/laminado.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <!-- vantagens -->
+    <main class="advantage">
+        <h1>Vantagens e Benefícios</h1>
+        <div class="benefits">
+
+            <div class="card">
+                <i class="icon fa-regular fa-thumbs-up"></i>
+                <h1>Reforma sem Trauma</h1>
+                <p>Não gera entulho, instalado sobre
+                    outros pisos e utilizado o Piso Laminado no mesmo dia.
+                </p>
+            </div>
+            <div class="card">
+                <i class="icon fa-solid fa-leaf"></i>
+                <h1>Ecologicamente
+                    Correto</h1>
+                <p>O Piso Laminado é produzido com madeira 100% de reflorestamento, poupando recursos naturais.</p>
+            </div>
+            <div class="card">
+                <i class="icon fa-solid fa-bug"></i>
+                <h1>Totalmente
+                    Antibacteriano</h1>
+                <p>O Piso Laminado inibe o crescimento e reprodução de fungos e bactérias na superfície.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <main class="product">
+        <h1>Conheça Nossos Produtos</h1>
+        <div class="product-container">
+        <div class="product-info">
+            
+                <h2>Piso Laminado carvalho Colonial</h2>
+                <img class="img-item" src="assets/img/Home-Laminate-Flooring-piso-laminado-no-home-office.webp" alt="">
+                <button class="btn">Fazer orçamento</button>
+        </div>
+
+        <div class="product-info">
+            
+            <h2>Piso Laminado Carvalho ravena</h2>
+            <img class="img-item" src="assets/img/Home-Laminate-Flooring-piso-laminado-no-home-office.webp" alt="">
+            <button class="btn">Fazer orçamento</button>
+    </div>
+    <div class="product-info">
+            
+        <h2>Piso Laminado carvalho York</h2>
+        <img class="img-item" src="assets/img/Home-Laminate-Flooring-piso-laminado-no-home-office.webp" alt="">
+        <button class="btn">Fazer orçamento</button>
+</div>
+</div>
+
+    </main>
+
+
+
+
+
+    <script>
+        function showMenu() {
+
+            let navMenu = document.querySelector('.nav-list');
+            if (navMenu.classList.contains('open')) {
+                navMenu.classList.remove('open')
+            } else {
+                navMenu.classList.add('open')
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
